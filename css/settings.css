@@ -1,0 +1,294 @@
+/* fonts  */
+
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 132%; /* 47.52px */
+  letter-spacing: -1.44px;
+  color: var(--main-text-color);
+  margin: 0;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 120%; /* 38.4px */
+  letter-spacing: -0.96px;
+  text-align: center;
+  margin: 0;
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 120%; /* 33.6px */
+  letter-spacing: -0.84px;
+  color: var(--red);
+  margin: 0;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 140%; /* 28px */
+  color: var(--second-text-color);
+  margin: 0;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 140%; /* 25.2px */
+  letter-spacing: -0.306px;
+  margin: 0;
+}
+
+h6 {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 150%; /* 24px */
+  letter-spacing: -0.16px;
+  color: var(--second-text-color);
+  margin: 0;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%; /* 21px */
+  letter-spacing: -0.14px;
+  color: var(--second-text-color);
+  margin: 0;
+}
+
+a {
+  color: var(--red);
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0;
+}
+
+a:hover {
+  color: var(--red);
+}
+
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 56px;
+    font-weight: 500;
+  }
+
+  h5 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+  .infoText {
+    font-size: 28px;
+  }
+}
+
+/* width  */
+
+
+
+.w-90 {
+  width: 91.666667%;
+}
+
+
+@media (max-width: 450px) {
+.w-80 {
+  width: 83.333333%;
+}
+}
+
+@media (min-width: 450px) {
+  .w-80 {
+  width: 60%;
+}
+}
+
+@media (min-width: 1200px) {
+  .w-80 {
+  width: 91.666667%;
+}
+}
+
+/* display  */
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-column-row {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 992px) {
+  .flex-column-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.flex-column-row2 {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1200px) {
+  .flex-column-row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+
+/* hidden  */
+
+.hidden {
+  display: block;
+}
+
+@media (min-width: 992px) {
+  .hidden {
+    display: none;
+  }
+}
+
+/* text  */
+
+.textLight {
+  font-weight: 300;
+}
+
+.textMedium {
+  font-weight: 500;
+}
+
+.textBold {
+  font-weight: 700;
+}
+
+.textRed {
+  color: var(--red);
+}
+
+.textCenter {
+  text-align: center;
+}
+
+/* button  */
+
+.button {
+  border: 1px solid var(--red);
+  border-radius: 10px;
+  color: var(--white);
+  background: var(--red);
+  transition: color 0.5s, background 0.5s;
+}
+
+.button:hover {
+  color: var(--red);
+  background: var(--white);
+}
+
+.buttonWhite {
+  border: 1px solid var(--red);
+  border-radius: 10px;
+  color: var(--red);
+  background: var(--white);
+  padding: 16px;
+  transition: color 0.5s, background 0.5s;
+}
+
+.buttonWhite:hover {
+  color: var(--white);
+  background: var(--red);
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.hiddenButton {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .hiddenButton {
+    display: block;
+  }
+}
+
+/* padding  */
+
+.pb-16 {
+  padding-bottom: 16px;
+}
+
+.pb-30 {
+  padding-bottom: 30px;
+}
+
+.py-30 {
+  padding: 30px 0px;
+}
+
+.py-12 {
+  padding: 12px 0px;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.py-49 {
+  padding: 49px 0px;
+}
+
+.py-70 {
+  padding: 70px 0px;
+}
+
+/* margin */
+
+.my-24 {
+  margin: 24px 0px 8px 0px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.m-100 {
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+.pt-216 {
+  margin-top: 216px;
+}
+
+.mb-70 {
+  margin-bottom: 70px;
+}
+
