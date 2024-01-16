@@ -62,6 +62,7 @@ p {
 }
 
 a {
+  font-size: 16px;
   color: var(--red);
   text-decoration: none;
   font-weight: 500;
@@ -92,29 +93,38 @@ a:hover {
 
 /* width  */
 
-
-
 .w-90 {
   width: 91.666667%;
 }
 
-
-@media (max-width: 450px) {
 .w-80 {
   width: 83.333333%;
 }
+
+.w-60 {
+  width: 91.666667%;
+  margin: auto;
+}
+
+.w-70 {
+  width: 91.666667%;
+  margin: auto;
 }
 
 @media (min-width: 450px) {
   .w-80 {
-  width: 60%;
-}
+    width: 60%;
+  }
 }
 
 @media (min-width: 1200px) {
   .w-80 {
-  width: 91.666667%;
-}
+    width: 91.666667%;
+  }
+
+  .w-60 {
+    width: 60%;
+  }
 }
 
 /* display  */
@@ -155,7 +165,6 @@ a:hover {
   }
 }
 
-
 /* hidden  */
 
 .hidden {
@@ -194,6 +203,8 @@ a:hover {
 
 .button {
   border: 1px solid var(--red);
+  font-size: 16px;
+  font-weight: 300;
   border-radius: 10px;
   color: var(--white);
   background: var(--red);
@@ -203,6 +214,11 @@ a:hover {
 .button:hover {
   color: var(--red);
   background: var(--white);
+}
+
+.accordionButtom {
+  padding: 16px 29px;
+  margin: 40px 0px 60px 0px;
 }
 
 .buttonWhite {
@@ -274,7 +290,6 @@ a:hover {
   margin-bottom: 24px;
 }
 
-
 .mb-16 {
   margin-bottom: 16px;
 }
@@ -291,4 +306,3 @@ a:hover {
 .mb-70 {
   margin-bottom: 70px;
 }
-

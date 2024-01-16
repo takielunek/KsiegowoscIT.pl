@@ -6,9 +6,12 @@
     <title>KsięgowośćIT.pl</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap"
       rel="stylesheet"
@@ -26,132 +29,170 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/settings.css" />
   </head>
-  <body>
-    <nav class="nav navContainer navbar wrapper">
-      <img class="whiteLogo" src="assets/svg/whiteLogo.svg" alt="Logo KsięgowośćIT.pl" />
+  <body class="pr">
+    <nav class="nav navbar">
+      <div class="navContainer wrapper2">
+        <img
+          class="whiteLogo"
+          src="assets/svg/whiteLogo.svg"
+          alt="Logo KsięgowośćIT.pl"
+        />
 
-      <div class="navMobile navCollapse">
-        <a href="#services" class="navItem">Usługi</a>
-        <a href="#collaboration" class="navItem">Współpraca</a>
-        <a href="#aboutUs" class="navItem">Dlaczego my</a>
-        <a href="#contact" class="navItem">Kontakt</a>
-      </div>
-
+        <div class="navMobile navCollapse">
+          <a href="#services" class="navItem">Usługi</a>
+          <a href="#collaboration" class="navItem">Współpraca</a>
+          <a href="#aboutUs" class="navItem">Dlaczego my</a>
+          <a href="#contact" class="navItem">Kontakt</a>
+        </div>
 
         <i class="fa-solid fa-bars hamburger"></i>
 
-      <div class="navbarDesktopItems navCollapse">
-        <div class="desktopItems">
-          <div class="navItems">
-            <a href="#services" class="navItem">Usługi</a>
-            <a href="#collaboration" class="navItem">Współpraca</a>
-            <a href="#aboutUs" class="navItem">Dlaczego my</a>
-            <a href="#contact" class="navItem">Kontakt</a>
-            <a href="#offer" class="navbarButton">Oferta</a>
-          </div>
-          <div class="navbarIcon">
-            <a href="https://www.facebook.com/ksiegowoscit"
-              ><img src="assets/svg/facebook.svg" alt="Ikona Facebook"
-            /></a>
-            <a href="https://www.linkedin.com/company/ksi%C4%99gowoscit-pl/"
-              ><img class="icon" src="assets/svg/linkedIn.svg" alt="Ikona LinkedIn"
-            /></a>
+        <div class="navbarDesktopItems navCollapse">
+          <div class="desktopItems">
+            <div class="navItems">
+              <a href="#services" class="navItem">Usługi</a>
+              <a href="#collaboration" class="navItem">Współpraca</a>
+              <a href="#aboutUs" class="navItem">Dlaczego my</a>
+              <a href="#contact" class="navItem">Kontakt</a>
+              <a href="#offer" class="navbarButton">Oferta</a>
+            </div>
+            <div class="navbarIcon">
+              <a href="https://www.facebook.com/ksiegowoscit"
+                ><img src="assets/svg/facebook.svg" alt="Ikona Facebook"
+              /></a>
+              <a href="https://www.linkedin.com/company/ksi%C4%99gowoscit-pl/"
+                ><img
+                  class="icon"
+                  src="assets/svg/linkedIn.svg"
+                  alt="Ikona LinkedIn"
+              /></a>
+            </div>
           </div>
         </div>
       </div>
-
     </nav>
 
+    <section class="wrapper">
+      <div class="containerPadding">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+          </ol>
 
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <div
+                class="backgroundImg"
+                src="assets/img/background.png"
+                alt="Okulary"
+              ></div>
+              <div class="carousel-caption">
+                <h1 class="textCenter carouselTitle">
+                  Kompleksowe usługi księgowe dla branży IT
+                </h1>
+                <p class="carouselText">
+                  Zniżka <span class="percentText">30%</span> dla nowych
+                  klientów
+                </p>
+                <div class="buttonContainer">
+                  <a href=""
+                    ><button class="button carouselButton">
+                      Sprawdź nas
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
 
-
-
-<section class="wrapper">
-  <div class="containerPadding">
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
- 
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-    </ol>
-
-    <div class="carousel-inner" role="listbox">
-
-      <div class="item active">
-        <img class="backgroundImg" src="../assets/img/background.png" alt="Okulary" height="600">
-        <div class="carousel-caption">
-          <h1 class="textCenter carouselTitle">Kompleksowe usługi księgowe dla branży IT</h1>
-          <p class="carouselText">Zniżka <span class="percentText">30%</span> dla nowych klientów</p>
-      <div class="buttonContainer">
-       <a href=""><button class="button carouselButton">Sprawdź nas</button></a> 
-      </div>
+            <div class="item">
+              <div
+                class="backgroundImg"
+                src="assets/img/background.png"
+                alt="Okulary"
+              ></div>
+              <div class="carousel-caption">
+                <h1 class="textCenter carouselTitle">
+                  Prowadzenie działalności przez naszych księgowych
+                </h1>
+                <p class="carouselText">200 zł netto</p>
+                <div class="buttonContainer">
+                  <a href=""
+                    ><button class="button carouselButton">
+                      Sprawdź nas
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    
-      <div class="item">
-        <img class="backgroundImg" src="../assets/img/background.png" alt="Okulary" height="600" >
-        <div class="carousel-caption">
-           <h1 class="textCenter carouselTitle">Prowadzenie działalności przez naszych księgowych</h1>
-          <p class="carouselText">200 zł netto</p>
-         <div class="buttonContainer">
-        <a href=""><button class="button carouselButton">Sprawdź nas</button></a> 
-      </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</section>
+    </section>
 
-
-
-
-
-
-
-
-
-
-    
     <main>
-      <section class="wrapper">
-      <div class="flex-column-row container2">
+      <section class="wrapper w-80">
+        <div class="flex-column-row container2">
           <div class="textCenter">
-          <img class="pb-16" src="assets/svg/user.svg" alt="Ikona użytkownik" />
-          <h1>100</h1>
-          <h4 class="textLight">klientów</h4>
+            <img
+              class="pb-16"
+              src="assets/svg/user.svg"
+              alt="Ikona użytkownik"
+            />
+            <h1>100</h1>
+            <h4 class="textLight">klientów</h4>
+          </div>
+          <div class="textCenter hidden">
+            <img
+              class="py-30"
+              src="assets/svg/remove.svg"
+              alt="Ikona myślnik"
+            />
+          </div>
+          <div class="textCenter">
+            <img class="pb-16" src="assets/svg/heart.svg" alt="Ikona serce" />
+            <h1>100%</h1>
+            <h4 class="textLight">zadowolenia</h4>
+          </div>
+          <div class="textCenter hidden">
+            <img
+              class="py-30"
+              src="assets/svg/remove.svg"
+              alt="Ikona myślnik"
+            />
+          </div>
+          <div class="textCenter">
+            <img
+              class="pb-16"
+              src="assets/svg/favorite.svg"
+              alt="Ikona gwiazda"
+            />
+            <h1>10 lat</h1>
+            <h4 class="textLight">doświadczenia</h4>
+          </div>
+          <div class="textCenter hidden">
+            <img
+              class="py-30"
+              src="assets/svg/remove.svg"
+              alt="Ikona myślnik"
+            />
+          </div>
+          <div class="textCenter">
+            <img
+              class="pb-16"
+              src="assets/svg/document.svg"
+              alt="Ikona dokument"
+            />
+            <h1>1000</h1>
+            <h4 class="textLight">dokumentów miesięcznie</h4>
+          </div>
         </div>
-        <div class="textCenter hidden">
-          <img class="py-30" src="assets/svg/remove.svg" alt="Ikona myślnik" />
-        </div>
-        <div class="textCenter">
-          <img class="pb-16" src="assets/svg/heart.svg" alt="Ikona serce" />
-          <h1>100%</h1>
-          <h4 class="textLight">zadowolenia</h4>
-        </div>
-        <div class="textCenter hidden">
-          <img class="py-30" src="assets/svg/remove.svg" alt="Ikona myślnik" />
-        </div>
-        <div class="textCenter">
-          <img class="pb-16" src="assets/svg/favorite.svg" alt="Ikona gwiazda" />
-          <h1>10 lat</h1>
-          <h4 class="textLight">doświadczenia</h4>
-        </div>
-        <div class="textCenter hidden">
-          <img class="py-30" src="assets/svg/remove.svg" alt="Ikona myślnik" />
-        </div>
-        <div class="textCenter">
-          <img class="pb-16" src="assets/svg/document.svg" alt="Ikona dokument" />
-          <h1>1000</h1>
-          <h4 class="textLight">dokumentów miesięcznie</h4>
-        </div>
-      </div>
       </section>
 
       <!-- services  -->
-      <section id="services scrollspy" class="wrapper w-90">
+      <section id="services scrollspy" class="wrapper">
         <h2 class="m-100">Usługi</h2>
-        <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion accordion-flush w-70" id="accordionFlushExample">
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingOne">
               <button
@@ -171,10 +212,78 @@
               aria-labelledby="flush-headingOne"
               data-bs-parent="#accordionFlushExample"
             >
-              <div class="accordion-body">
-                Placeholder content for this accordion, which is intended to
-                demonstrate the <code>.accordion-flush</code> class. This is the
-                first item's accordion body.
+              <div class="accordion-body flex-column gap-20 mb-70">
+                <h6>
+                  Świadczymy kompleksowe usługi księgowe oraz
+                  <span class="textMedium"
+                    >pomagamy przy zakładaniu działalności</span
+                  >.
+                </h6>
+
+                <div class="flex">
+                  <img
+                    class="dot"
+                    src="assets/svg/redDot.svg"
+                    alt="Czerwony punktor"
+                  />
+                  <h6 class="textMedium">
+                    rozliczenia podatkowe PIT, CIT, VAT,
+                  </h6>
+                </div>
+                <div class="flex">
+                  <img
+                    class="dot"
+                    src="assets/svg/redDot.svg"
+                    alt="Czerwony punktor"
+                  />
+                  <h6 class="textMedium">Księgi Przychodów i Rozchodów,</h6>
+                </div>
+                <div class="flex">
+                  <img
+                    class="dot"
+                    src="assets/svg/redDot.svg"
+                    alt="Czerwony punktor"
+                  />
+                  <h6 class="textMedium">
+                    księgi rachunkowe zgodnie z ustawą o rachunkowości,
+                  </h6>
+                </div>
+                <div class="flex">
+                  <img
+                    class="dot"
+                    src="assets/svg/redDot.svg"
+                    alt="Czerwony punktor"
+                  />
+                  <h6 class="textMedium">
+                    ewidencje środków trwałych oraz wartości niematerialnych,
+                  </h6>
+                </div>
+                <div class="flex">
+                  <img
+                    class="dot"
+                    src="assets/svg/redDot.svg"
+                    alt="Czerwony punktor"
+                  />
+                  <h6 class="textMedium">
+                    rozliczenia z tytułu podatku VAT, podatku dochodowego od
+                    osób fizycznych i prawnych,
+                  </h6>
+                </div>
+                <div class="flex">
+                  <img
+                    class="dot"
+                    src="assets/svg/redDot.svg"
+                    alt="Czerwony punktor"
+                  />
+                  <h6 class="textMedium">
+                    sporządzamy i składamy deklaracje do ZUS.
+                  </h6>
+                </div>
+
+                <h6>
+                  To tylko kilka punktów, które wchodzą w bardzo szeroki zakres
+                  naszych usług.
+                </h6>
               </div>
             </div>
           </div>
@@ -197,11 +306,49 @@
               aria-labelledby="flush-headingTwo"
               data-bs-parent="#accordionFlushExample"
             >
-              <div class="accordion-body">
-                Placeholder content for this accordion, which is intended to
-                demonstrate the <code>.accordion-flush</code> class. This is the
-                second item's accordion body. Let's imagine this being filled
-                with some actual content.
+              <div class="accordion-body mb-70">
+                <div class="flex-column gap-20">
+                  <h6>
+                    Pomożemy założyć Ci działalność gospodarczą. Z nami
+                    zobaczysz jakie to proste.
+                  </h6>
+
+                  <div class="flex">
+                    <img
+                      class="dot"
+                      src="assets/svg/redDot.svg"
+                      alt="Czerwony punktor"
+                    />
+                    <h6 class="textMedium">
+                      dostaniesz od nas czytelny manual (instrukcję) jak założyć
+                      firmę
+                    </h6>
+                  </div>
+                  <div class="flex">
+                    <img
+                      class="dot"
+                      src="assets/svg/redDot.svg"
+                      alt="Czerwony punktor"
+                    />
+                    <h6 class="textMedium">
+                      doradzimy co warto zrobić po założeniu firmy
+                    </h6>
+                  </div>
+                </div>
+                <button class="button accordionButtom">
+                  Instrukcja zakładania firmy
+                </button>
+                <h6>
+                  Jeśli po zobaczeniu instrukcji nadal masz jakieś pytania
+                  skontaktuj się z nami w najwygodniejszy dla Ciebie sposób:
+                </h6>
+                <div class="mt-25 flex-column">
+                  <a href="mailto:biuro@ksiegowoscit.pl"
+                    >biuro@ksiegowoscit.pl</a
+                  >
+                  <a href="tel:+48515069002">tel. +48 500 110 2100</a>
+                  <a href="">przez teamsy</a>
+                </div>
               </div>
             </div>
           </div>
@@ -224,10 +371,15 @@
               aria-labelledby="flush-headingThree"
               data-bs-parent="#accordionFlushExample"
             >
-              <div class="accordion-body">
-                Placeholder content for this accordion, which is intended to
-                demonstrate the <code>.accordion-flush</code> class. This is the
-                first item's accordion body.
+              <div class="accordion-body mb-70">
+                <h6>
+                  Jeśli masz problemy albo chcesz byśmy założyli spółkę w twom
+                  imieniu napisz do nas maila. W mailu napisz o jaki rodzaj
+                  spółki chodzi. Nasz doradca skontaktuje się z Tobą.
+                </h6>
+                <a class="mt-25" href="mailto:spółki@ksiegowosclekarzy.pl"
+                  >spółki@ksiegowosclekarzy.pl</a
+                >
               </div>
             </div>
           </div>
@@ -250,10 +402,11 @@
               aria-labelledby="flush-headingFour"
               data-bs-parent="#accordionFlushExample"
             >
-              <div class="accordion-body">
-                Placeholder content for this accordion, which is intended to
-                demonstrate the <code>.accordion-flush</code> class. This is the
-                first item's accordion body.
+              <div class="accordion-body mb-70">
+                <h6>
+                  Pomożemy CI wybrać najlepszą ofertę leasingu. Przeanalizujemy
+                  wady i zalety każdej z ofert.
+                </h6>
               </div>
             </div>
           </div>
@@ -276,10 +429,39 @@
               aria-labelledby="flush-headingFive"
               data-bs-parent="#accordionFlushExample"
             >
-              <div class="accordion-body">
-                Placeholder content for this accordion, which is intended to
-                demonstrate the <code>.accordion-flush</code> class. This is the
-                first item's accordion body.
+              <div class="accordion-body flex-column gap-20 mb-70">
+                <h6>Nasz usługi są ubezpieczone. Doradzimy Ci jak:</h6>
+                <div class="flex">
+                  <img
+                    class="dot"
+                    src="assets/svg/redDot.svg"
+                    alt="Czerwony punktor"
+                  />
+                  <h6 class="textMedium">
+                    czy warto i gdzie ubezpieczyć swoją firmę
+                  </h6>
+                </div>
+                <div class="flex">
+                  <img
+                    class="dot"
+                    src="assets/svg/redDot.svg"
+                    alt="Czerwony punktor"
+                  />
+                  <h6 class="textMedium">
+                    pomożemy wybrać najlepsze ubezpieczenie komunikacyjne
+                  </h6>
+                </div>
+                <div class="flex">
+                  <img
+                    class="dot"
+                    src="assets/svg/redDot.svg"
+                    alt="Czerwony punktor"
+                  />
+                  <h6 class="textMedium">
+                    ubezpieczymy Cię wraz z innymi naszymi klientami
+                    ubezpieczeniem grupowym
+                  </h6>
+                </div>
               </div>
             </div>
           </div>
@@ -302,10 +484,12 @@
               aria-labelledby="flush-headingSix"
               data-bs-parent="#accordionFlushExample"
             >
-              <div class="accordion-body">
-                Placeholder content for this accordion, which is intended to
-                demonstrate the <code>.accordion-flush</code> class. This is the
-                first item's accordion body.
+              <div class="accordion-body mb-70">
+                <h6>
+                  Doradzimy jakie dotacje unijne będą dla Ciebie najlepsze.
+                  Jakie są ich wady i zalety. Na jakim etapie najlepiej je
+                  wziąć.
+                </h6>
               </div>
             </div>
           </div>
@@ -328,10 +512,12 @@
               aria-labelledby="flush-headingSeven"
               data-bs-parent="#accordionFlushExample"
             >
-              <div class="accordion-body">
-                Placeholder content for this accordion, which is intended to
-                demonstrate the <code>.accordion-flush</code> class. This is the
-                first item's accordion body.
+              <div class="accordion-body mb-70">
+                <h6>
+                  Nasi doradcy finansowi podpowiedzą Ci jak zoptymalizować Twoje
+                  finanse. Zmiana formy opodatkowania, IP Box a może CIT
+                  estoński? Znam się na tym bardzo dobrze.
+                </h6>
               </div>
             </div>
           </div>
@@ -354,10 +540,35 @@
               aria-labelledby="flush-headingEight"
               data-bs-parent="#accordionFlushExample"
             >
-              <div class="accordion-body">
-                Placeholder content for this accordion, which is intended to
-                demonstrate the <code>.accordion-flush</code> class. This is the
-                first item's accordion body.
+              <div class="accordion-body flex-column gap-20">
+                <h6>
+                  Z nami zaoszczędzisz przy zakupie nowego samochodu.
+                  Współpracujemy z dealerami marek:
+                </h6>
+                <div class="flex">
+                  <img
+                    class="dot"
+                    src="assets/svg/redDot.svg"
+                    alt="Czerwony punktor"
+                  />
+                  <h6 class="textMedium">BMW</h6>
+                </div>
+                <div class="flex">
+                  <img
+                    class="dot"
+                    src="assets/svg/redDot.svg"
+                    alt="Czerwony punktor"
+                  />
+                  <h6 class="textMedium">Mercedes</h6>
+                </div>
+                <div class="flex">
+                  <img
+                    class="dot"
+                    src="assets/svg/redDot.svg"
+                    alt="Czerwony punktor"
+                  />
+                  <h6 class="textMedium">Skoda</h6>
+                </div>
               </div>
             </div>
           </div>
@@ -407,28 +618,48 @@
             </p>
             <div class="d-grid gap-3">
               <div class="flex">
-                <img class="dot" src="assets/svg/redDot.svg" alt="Czerwony punktor" />
+                <img
+                  class="dot"
+                  src="assets/svg/redDot.svg"
+                  alt="Czerwony punktor"
+                />
                 <p>będziemy pamiętać o wszystkich terminach,</p>
               </div>
               <div class="flex">
-                <img class="dot" src="assets/svg/redDot.svg" alt="Czerwony punktor" />
+                <img
+                  class="dot"
+                  src="assets/svg/redDot.svg"
+                  alt="Czerwony punktor"
+                />
                 <p>będziemy analizować i doradzać,</p>
               </div>
               <div class="flex">
-                <img class="dot" src="assets/svg/redDot.svg" alt="Czerwony punktor" />
+                <img
+                  class="dot"
+                  src="assets/svg/redDot.svg"
+                  alt="Czerwony punktor"
+                />
                 <p>
                   pomożemy założyć Ci działalność gospodarczą i przeszkolimy z
                   prowadzenia firmy,
                 </p>
               </div>
               <div class="flex">
-                <img class="dot" src="assets/svg/redDot.svg" alt="Czerwony punktor" />
+                <img
+                  class="dot"
+                  src="assets/svg/redDot.svg"
+                  alt="Czerwony punktor"
+                />
                 <p>
                   zaprosimy na darmowe webinary z naszymi doradcami podatkowymi,
                 </p>
               </div>
               <div class="flex">
-                <img class="dot" src="assets/svg/redDot.svg" alt="Czerwony punktor" />
+                <img
+                  class="dot"
+                  src="assets/svg/redDot.svg"
+                  alt="Czerwony punktor"
+                />
                 <p>jesteśmy do Twojej dyspozycji!!!</p>
               </div>
             </div>
@@ -456,7 +687,7 @@
           </div>
         </div>
 
-        <img class="hiddenImg img3" src="assets/img/img1.png" alt="Mężczyzna" />
+        <img class="hiddenImg img3" src="assets/img/img3.png" alt="Mężczyzna" />
       </section>
 
       <!-- oferta  -->
@@ -466,13 +697,21 @@
           <div class="flex-column-row">
             <div class="d-grid gap-3">
               <div class="flex">
-                <img class="dot" src="assets/svg/redDot.svg" alt="Czerwony punktor" />
+                <img
+                  class="dot"
+                  src="assets/svg/redDot.svg"
+                  alt="Czerwony punktor"
+                />
                 <p>
                   jesteśmy spółką z o.o. specjalizujemy się w księgowości IT
                 </p>
               </div>
               <div class="flex">
-                <img class="dot" src="assets/svg/redDot.svg" alt="Czerwony punktor" />
+                <img
+                  class="dot"
+                  src="assets/svg/redDot.svg"
+                  alt="Czerwony punktor"
+                />
                 <p>
                   koszt księgowości to
                   <span class="textBold">200 zł netto miesięcznie</span>, w
@@ -481,41 +720,73 @@
                 </p>
               </div>
               <div class="flex">
-             <img class="dot" src="assets/svg/redDot.svg" alt="Czerwony punktor" />
+                <img
+                  class="dot"
+                  src="assets/svg/redDot.svg"
+                  alt="Czerwony punktor"
+                />
                 <p>ubezpieczenie naszych usług - OC ponad 200 000 zł</p>
               </div>
               <div class="flex">
-           <img class="dot" src="assets/svg/redDot.svg" alt="Czerwony punktor" />
+                <img
+                  class="dot"
+                  src="assets/svg/redDot.svg"
+                  alt="Czerwony punktor"
+                />
                 <p>
                   system poleceń - za każdą skutecznie poleconą osobę/firmę
                   kolejny miesiąc rozliczeniowy otrzymujesz od nas za darmo
                 </p>
               </div>
               <div class="flex">
-    <img class="dot" src="assets/svg/redDot.svg" alt="Czerwony punktor" />
+                <img
+                  class="dot"
+                  src="assets/svg/redDot.svg"
+                  alt="Czerwony punktor"
+                />
                 <p>faktury można dostarczać w 100% online</p>
               </div>
               <div class="flex">
-         <img class="dot" src="assets/svg/redDot.svg" alt="Czerwony punktor" />
+                <img
+                  class="dot"
+                  src="assets/svg/redDot.svg"
+                  alt="Czerwony punktor"
+                />
                 <p>rozliczenia działalności robimy kwartalnie/miesięcznie</p>
               </div>
               <div class="flex">
-<img class="dot" src="assets/svg/redDot.svg" alt="Czerwony punktor" />
+                <img
+                  class="dot"
+                  src="assets/svg/redDot.svg"
+                  alt="Czerwony punktor"
+                />
                 <p>zniżki na ubezpieczenia samochodów</p>
               </div>
               <div class="flex">
-     <img class="dot" src="assets/svg/redDot.svg" alt="Czerwony punktor" />
+                <img
+                  class="dot"
+                  src="assets/svg/redDot.svg"
+                  alt="Czerwony punktor"
+                />
                 <p>zniżki na nowe samochody</p>
               </div>
             </div>
 
             <div class="d-grid gap-3">
               <div class="flex">
-             <img class="dot" src="assets/svg/redDot.svg" alt="Czerwony punktor" />
+                <img
+                  class="dot"
+                  src="assets/svg/redDot.svg"
+                  alt="Czerwony punktor"
+                />
                 <p>wsparcie w wyborze leasingu (wady/zalety danego leasingu)</p>
               </div>
               <div class="flex">
-  <img class="dot" src="assets/svg/redDot.svg" alt="Czerwony punktor" />
+                <img
+                  class="dot"
+                  src="assets/svg/redDot.svg"
+                  alt="Czerwony punktor"
+                />
                 <p>
                   pomoc w założeniu działalności gospodarczej (<span
                     class="textRed underline"
@@ -524,26 +795,46 @@
                 </p>
               </div>
               <div class="flex">
-<img class="dot" src="assets/svg/redDot.svg" alt="Czerwony punktor" />
+                <img
+                  class="dot"
+                  src="assets/svg/redDot.svg"
+                  alt="Czerwony punktor"
+                />
                 <p>ubezpieczenie grupowe IT naszych klientów</p>
               </div>
               <div class="flex">
-            <img class="dot" src="assets/svg/redDot.svg" alt="Czerwony punktor" />
+                <img
+                  class="dot"
+                  src="assets/svg/redDot.svg"
+                  alt="Czerwony punktor"
+                />
                 <p>optymalizacje podatkowe np. IP box, B+R</p>
               </div>
               <div class="flex">
-             <img class="dot" src="assets/svg/redDot.svg" alt="Czerwony punktor" />
+                <img
+                  class="dot"
+                  src="assets/svg/redDot.svg"
+                  alt="Czerwony punktor"
+                />
                 <p>manual zakładania firmy</p>
               </div>
               <div class="flex">
-       <img class="dot" src="assets/svg/redDot.svg" alt="Czerwony punktor" />
+                <img
+                  class="dot"
+                  src="assets/svg/redDot.svg"
+                  alt="Czerwony punktor"
+                />
                 <p>
                   darmowe webinary dla klientów prowadzone przez naszych
                   doradców podatkowych oraz prawników
                 </p>
               </div>
               <div class="flex">
-<img class="dot" src="assets/svg/redDot.svg" alt="Czerwony punktor" />
+                <img
+                  class="dot"
+                  src="assets/svg/redDot.svg"
+                  alt="Czerwony punktor"
+                />
                 <p>
                   po podpisaniu umowy
                   <span class="textBold"
@@ -560,17 +851,30 @@
         <div class="buttonContainer2 mt-24">
           <button class="button buttonPadding">
             Zobacz wzór umowy
-            <img src="assets/svg/document-download-white.svg" alt="Ikona dokumentu" />
+            <img
+              src="assets/svg/document-download-white.svg"
+              alt="Ikona dokumentu"
+            />
           </button>
           <button class="button buttonWhite hiddenButton">
             instrukcja zakładania firmy
-            <img src="assets/svg/document-download-red.svg" alt="Ikona dokumentu" />
+            <img
+              src="assets/svg/document-download-red.svg"
+              alt="Ikona dokumentu"
+            />
           </button>
         </div>
       </section>
       <!-- about us  -->
-      <section id="aboutUs scrollspy" class="flex-column-row mt-170 wrapper w-90">
-        <img class="img2" src="assets/img/img2.png" alt="Kobieta siedząca przy biurku" />
+      <section
+        id="aboutUs scrollspy"
+        class="flex-column-row mt-170 wrapper w-90"
+      >
+        <img
+          class="img2"
+          src="assets/img/img2.png"
+          alt="Kobieta siedząca przy biurku"
+        />
 
         <div class="aboutUs">
           <h2 class="aboutUsTitle">Dlaczego my</h2>
@@ -593,20 +897,72 @@
 
       <!-- reviews  -->
 
-      <section class="wrapper w-90">
-        <div class="mt-144 mb-47">
+      <section class="wrapper">
+        <div class="mt-144 mb-70">
           <h2>Opinie naszych klientów</h2>
+        </div>
+
+        <div id="myCarousel" class="carousel slide sliderHeight" data-ride="carousel" >
+          <div class="carousel-inner" role="listbox">
+            <div class="item active flex itemStyle">
+              <img class="reviewsImg" src="assets/img/client.png" alt="" />
+              <div class="carousel-caption carouselShadow textMargin">
+                <h6 class="textMedium">
+                  <span class="textRed">Wojtek</span>, tester
+                </h6>
+                <p class="textLight">
+                  Jestem bardzo zadowolony Księgowości IT. Jestem ich klientem
+                  od 3 lat i bardzo polecam. Wszystko można załatwić on-line.
+                </p>
+              </div>
+            </div>
+            <div class="item flex itemStyle">
+              <img class="reviewsImg" src="assets/img/client.png" alt="" />
+              <div class="carousel-caption carouselShadow textMargin">
+                <h6 class="textMedium">
+                  <span class="textRed">Wojtek</span>, tester
+                </h6>
+                <p class="textLight">
+                  Jestem bardzo zadowolony Księgowości IT. Jestem ich klientem
+                  od 3 lat i bardzo polecam. Wszystko można załatwić on-line.
+                </p>
+              </div>
+            </div>
+            <div class="item flex itemStyle">
+              <img class="reviewsImg" src="assets/img/client.png" alt="" />
+              <div class="carousel-caption carouselShadow textMargin">
+                <h6 class="textMedium">
+                  <span class="textRed">Wojtek</span>, tester
+                </h6>
+                <p class="textLight">
+                  Jestem bardzo zadowolony Księgowości IT. Jestem ich klientem
+                  od 3 lat i bardzo polecam. Wszystko można załatwić on-line.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
         </div>
       </section>
 
       <!-- contact  -->
-      <section id="contact scrollspy" class="flex-column-row2 mb-70 wrapper w-90">
-        <img class="logoDesktop" src="assets/svg/logo.svg" alt="Logo KsięgowośćIT.pl" />
+      <section
+        id="contact scrollspy"
+        class="flex-column-row2 mb-70 wrapper w-90 mt-365"
+      >
+        <img
+          class="logoDesktop"
+          src="assets/svg/logo.svg"
+          alt="Logo KsięgowośćIT.pl"
+        />
 
         <div>
           <h2 class="contact">Kontakt</h2>
-
-          <img class="logoMobile" src="assets/svg/blackLogo.svg" alt="Logo KsięgowośćIT.pl" />
 
           <div class="py-46">
             <h6 class="textBold pb-30">Ksiegowoscit.pl sp. z o.o.</h6>
@@ -635,27 +991,38 @@
     </main>
 
     <!-- footer  -->
-    <footer class="wrapper">
-      <div class="flex justify-content-between w-90 mx-auto p-152">
-        <div class="flex-column-row items">
-          <a class="footerText" href="">RODO</a>
-          <a class="footerText" href="">Polityka prywatności</a>
-          <a class="footerText" href="">IP BOX</a>
-          <a class="footerText" href="">Kontakt</a>
-        </div>
-        <div class="flex-column-row gap-16">
-          <a href="https://www.facebook.com/ksiegowoscit"
-            ><img src="assets/svg/facebook.svg" alt="Ikona Facebook"
-          /></a>
-          <a href="https://www.linkedin.com/company/ksi%C4%99gowoscit-pl/"
-            ><img
-              class="icon"
-              src="assets/svg/linkedIn.svg"
-              alt="Ikona LinkedIn"
-          /></a>
+    <footer>
+      <div class="wrapper">
+        <div class="flex justify-content-between w-90 mx-auto p-152">
+          <div class="flex-column-row items">
+            <a class="footerText" href="">RODO</a>
+            <a class="footerText" href="">Polityka prywatności</a>
+            <a class="footerText" href="">IP BOX</a>
+            <a class="footerText" href="">Kontakt</a>
+          </div>
+          <div class="flex-column-row gap-16">
+            <a href="https://www.facebook.com/ksiegowoscit"
+              ><img src="assets/svg/facebook.svg" alt="Ikona Facebook"
+            /></a>
+            <a href="https://www.linkedin.com/company/ksi%C4%99gowoscit-pl/"
+              ><img
+                class="icon"
+                src="assets/svg/linkedIn.svg"
+                alt="Ikona LinkedIn"
+            /></a>
+          </div>
         </div>
       </div>
     </footer>
+
+    
+      <img
+        class="pa letter2"
+        src="assets/img/backgroundLetter.png"
+        alt="Litera K"
+      />
+    
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
