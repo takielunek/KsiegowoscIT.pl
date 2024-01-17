@@ -35,6 +35,7 @@ body {
   padding: 14px 24px;
 }
 
+
 .navbarDesktopItems {
   display: block;
 }
@@ -110,7 +111,32 @@ body {
 
 .containerPadding {
   padding: 0;
+
 }
+
+.carouselHeight {
+  height: 1150px;
+}
+
+@media (min-width: 650px) {
+.carouselHeight {
+  height: 1050px;
+}
+}
+
+@media (min-width: 900px) {
+.carouselHeight {
+  height: 950px;
+}
+}
+
+@media (min-width: 990px) {
+.carouselHeight {
+  height: 840px;
+}
+}
+
+
 
 .carouselShadow {
   text-shadow: none;
@@ -207,6 +233,55 @@ ol.carousel-indicators li {
   gap: 20px;
 }
 
+.accordion-item {
+  border: none;
+}
+
+.accordion-button:focus {
+  outline: none;
+  background: transparent;
+  color: var(--red);
+  border: none;
+  box-shadow: none;
+}
+
+.accordion-button.collapsed {
+  background: transparent;
+}
+
+.accordion-button:not(.collapsed) {
+  background: transparent;
+  color: var(--red);
+  border: none;
+  box-shadow: none;
+}
+
+.accordion-button::after {
+  background-image: none;
+  content: "\f078";
+  font-family: fontawesome;
+  width: auto;
+  height: auto;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: none;
+}
+
+.letter1 {
+display: none;
+}
+
+
+@media (min-width: 1200px) {
+.letter1 {
+  display: block;
+  top: 0;
+  right: 0;
+  height: 650px;
+}
+}
+
 /* collaboration  */
 
 .gap-64 {
@@ -219,6 +294,29 @@ ol.carousel-indicators li {
   box-shadow: 0px 80px 80px 0px rgba(0, 0, 0, 0.07);
   padding: 0px 8px 24px 8px;
   text-align: center;
+}
+
+.img3 {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 992px) {
+.img3 {
+ margin-top: 200px;
+}
+}
+
+@media (min-width: 1200px) {
+.img3 {
+ margin-top: 100px;
+}
+}
+
+@media (min-width: 1400px) {
+.img3 {
+ margin-top: 0px;
+}
 }
 
 .mb-30 {
@@ -260,6 +358,8 @@ ol.carousel-indicators li {
 .circleIcon {
   width: 82px;
 }
+
+
 
 @media (max-width: 992px) {
   .container2 {
@@ -315,7 +415,11 @@ ol.carousel-indicators li {
 @media (min-width: 1200px) {
   .container {
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
-    padding: 39px 0px 39px 0px;
+    padding: 39px 10px ;
+  }
+
+    .collaborationText {
+    width: 50%;
   }
 }
 
@@ -328,9 +432,33 @@ ol.carousel-indicators li {
     width: 50%;
   }
 
-  .collaborationText {
-    width: 50%;
-  }
+}
+
+.vertical-vector {
+display: none;
+}
+
+.horizontal-vector {
+display: block;
+position: absolute;
+z-index: -1;
+top: 140px;
+width: 1320px;
+}
+
+@media (max-width: 1200px) {
+.vertical-vector {
+display: block;
+position: absolute;
+z-index: -1;
+left: 50%;
+bottom: 0px;
+height: 1280px;
+}
+
+.horizontal-vector {
+display: none;
+}
 }
 
 /* offer  */
@@ -442,8 +570,6 @@ ol.carousel-indicators li {
 
 /* reviews  */
 
-
-
 .mt-144 {
   margin-top: 144px;
 }
@@ -451,8 +577,6 @@ ol.carousel-indicators li {
 .mb-47 {
   margin-bottom: 47px;
 }
-
-
 
 /* reviews carousel */
 .sliderHeight {
@@ -477,14 +601,12 @@ ol.carousel-indicators li {
   height: 48px;
   width: 48px;
   margin-bottom: 100px;
-
 }
 
 @media (min-width: 992px) {
   .reviewsImg {
     height: 128px;
     width: 128px;
-
   }
 
   .textMargin {
@@ -493,14 +615,10 @@ ol.carousel-indicators li {
   }
 
   .itemStyle {
-  width: 80%;
-  margin: auto;
+    width: 80%;
+    margin: auto;
+  }
 }
-}
-
-
-
-
 
 @media (min-width: 1200px) {
   .mt-365 {
@@ -515,10 +633,9 @@ ol.carousel-indicators li {
   }
 }
 
-
 /* contact  */
-.py-46 {
-  padding: 46px 0px;
+.py-80 {
+  padding: 80px 0px;
 }
 
 .contactInfo {
@@ -553,9 +670,11 @@ ol.carousel-indicators li {
     margin-bottom: 48px;
   }
 
-  .py-46 {
+  .py-80 {
     padding: 0px;
   }
+
+  
 }
 
 .pr {
@@ -566,19 +685,30 @@ ol.carousel-indicators li {
   position: absolute;
 }
 
+
 .letter2 {
-  bottom: 0;
+display: none;
+}
+
+
+@media (min-width: 1200px) {
+.letter2 {
+  display: block;
+ bottom: 0;
   left: 0;
-  z-index: 1;
+  height: 650px;
   position: absolute;
+  z-index: -1;
+}
 }
 
 /* footer  */
 
 footer {
   background: var(--main-page-color);
-  z-index: 3;
+   z-index: auto;
 }
+
 
 .footerText {
   font-size: 14px;
