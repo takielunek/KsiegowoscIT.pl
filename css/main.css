@@ -1,5 +1,13 @@
 @import url("colors.css");
 
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -19,6 +27,7 @@ body {
 }
 
 /* navbar  */
+
 .whiteLogo {
   height: 33px;
 }
@@ -27,43 +36,52 @@ body {
   background: var(--main-page-color);
   height: 84px;
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.navContainer {
+.header {
   display: flex;
   justify-content: space-between;
   padding: 14px 24px;
 }
 
-
-.navbarDesktopItems {
-  display: block;
-}
-
-.desktopItems {
+.header nav ul {
   display: flex;
-  gap: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbarIcons {
+  display: flex;
+  gap: 18px;
+}
+
+nav {
+  display: flex;
   align-items: center;
+  gap: 40px;
 }
 
-.navItems {
-  gap: 64px;
-}
-
-.navMobile,
-.burgerBtn {
-  display: none;
+nav ul {
+  gap: 40px;
 }
 
 .navItem {
   color: var(--white);
   font-weight: 300;
-  padding: 10px 30px;
+  padding: 10px;
+  text-decoration: none;
 }
 
-.navbarIcon {
-  display: flex;
-  gap: 12px;
+.navItem:hover {
+  color: var(--red);
+  text-decoration: none;
+}
+
+.navItem:focus {
+  color: var(--red);
+  text-decoration: none;
 }
 
 .navbarButton {
@@ -73,37 +91,79 @@ body {
   border: 1px solid var(--red);
   border-radius: 10px;
   padding: 16px 47px;
-  margin: 0px 30px;
+
   transition: color 0.5s, background 0.5s;
 }
 
 .navbarButton:hover {
   color: var(--white);
   background: var(--main-page-color);
+  text-decoration: none;
 }
 
 .hamburger {
-  background: var(--main-page-color);
-  color: var(--white);
-  scale: 2;
   display: none;
-  padding: 10px;
 }
 
-@media (max-width: 1200px) {
-  .navbarDesktopItems {
-    display: none;
+.navButton {
+  color: white;
+  padding: 10px;
+  scale: 3;
+}
+
+.navMobile {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  background-color: var(--main-page-color);
+  transform: translateX(-102%);
+  transition: transform 0.3;
+  z-index: 10;
+  gap: 30px;
+}
+
+.navMobile ul {
+padding-top: 100px;
+margin: 0;
+}
+
+.navMobile li {
+  padding: 30px;
+}
+
+.navMobile-active {
+  transform: translateX(0);
+}
+
+.navMobileItem {
+  color: var(--white);
+  font-size: 30px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.navMobileItem:hover {
+  color: var(--red);
+  text-decoration: none;
+}
+
+@media (max-width: 1100px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    margin: 0;
   }
-  .burgerBtn {
+
+  .navMobile {
     display: block;
   }
 
-  .hamburger {
-    background: var(--main-page-color);
-    color: var(--white);
-    scale: 2;
-    margin-top: 10px;
-    display: block;
+  nav {
+    display: none;
   }
 }
 
@@ -111,32 +171,11 @@ body {
 
 .containerPadding {
   padding: 0;
-
 }
 
 .carouselHeight {
   height: 1150px;
 }
-
-@media (min-width: 650px) {
-.carouselHeight {
-  height: 1050px;
-}
-}
-
-@media (min-width: 900px) {
-.carouselHeight {
-  height: 950px;
-}
-}
-
-@media (min-width: 990px) {
-.carouselHeight {
-  height: 840px;
-}
-}
-
-
 
 .carouselShadow {
   text-shadow: none;
@@ -151,6 +190,53 @@ body {
   font-weight: 400;
   text-align: center;
   margin-top: 260px;
+}
+
+@media (max-width: 650px) {
+  .carouselHeight {
+    height: 2050px;
+  }
+  .carouselTitle {
+    font-size: 50px;
+    margin-top: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carouselTitle {
+    font-size: 36px;
+    margin-top: 160px;
+  }
+}
+
+@media (min-width: 327px) {
+  .carouselHeight {
+    height: 850px;
+  }
+}
+
+@media (min-width: 382px) {
+  .carouselHeight {
+    height: 800px;
+  }
+}
+
+@media (max-width: 650px) {
+  .carouselHeight {
+    height: 950px;
+  }
+}
+
+@media (max-width: 1105px) {
+  .carouselHeight {
+    height: 1000px;
+  }
+}
+
+@media (min-width: 1105px) {
+  .carouselHeight {
+    height: 840px;
+  }
 }
 
 .carouselText {
@@ -187,7 +273,6 @@ body {
   height: 840px;
   background-size: cover;
   color: white;
-
   filter: grayscale(100%);
 }
 
@@ -269,17 +354,16 @@ ol.carousel-indicators li {
 }
 
 .letter1 {
-display: none;
+  display: none;
 }
-
 
 @media (min-width: 1200px) {
-.letter1 {
-  display: block;
-  top: 0;
-  right: 0;
-  height: 650px;
-}
+  .letter1 {
+    display: block;
+    top: 0;
+    right: 0;
+    height: 650px;
+  }
 }
 
 /* collaboration  */
@@ -302,21 +386,21 @@ display: none;
 }
 
 @media (min-width: 992px) {
-.img3 {
- margin-top: 200px;
-}
+  .img3 {
+    margin-top: 200px;
+  }
 }
 
 @media (min-width: 1200px) {
-.img3 {
- margin-top: 100px;
-}
+  .img3 {
+    margin-top: 100px;
+  }
 }
 
 @media (min-width: 1400px) {
-.img3 {
- margin-top: 0px;
-}
+  .img3 {
+    margin-top: 0px;
+  }
 }
 
 .mb-30 {
@@ -358,8 +442,6 @@ display: none;
 .circleIcon {
   width: 82px;
 }
-
-
 
 @media (max-width: 992px) {
   .container2 {
@@ -415,10 +497,10 @@ display: none;
 @media (min-width: 1200px) {
   .container {
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
-    padding: 39px 10px ;
+    padding: 39px 10px;
   }
 
-    .collaborationText {
+  .collaborationText {
     width: 50%;
   }
 }
@@ -431,34 +513,33 @@ display: none;
   .hiddenImg {
     width: 50%;
   }
-
 }
 
 .vertical-vector {
-display: none;
+  display: none;
 }
 
 .horizontal-vector {
-display: block;
-position: absolute;
-z-index: -1;
-top: 140px;
-width: 1320px;
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: 140px;
+  width: 1320px;
 }
 
 @media (max-width: 1200px) {
-.vertical-vector {
-display: block;
-position: absolute;
-z-index: -1;
-left: 50%;
-bottom: 0px;
-height: 1280px;
-}
+  .vertical-vector {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    bottom: 0px;
+    height: 1280px;
+  }
 
-.horizontal-vector {
-display: none;
-}
+  .horizontal-vector {
+    display: none;
+  }
 }
 
 /* offer  */
@@ -673,8 +754,6 @@ display: none;
   .py-80 {
     padding: 0px;
   }
-
-  
 }
 
 .pr {
@@ -685,30 +764,27 @@ display: none;
   position: absolute;
 }
 
-
 .letter2 {
-display: none;
+  display: none;
 }
-
 
 @media (min-width: 1200px) {
-.letter2 {
-  display: block;
- bottom: 0;
-  left: 0;
-  height: 650px;
-  position: absolute;
-  z-index: -1;
-}
+  .letter2 {
+    display: block;
+    bottom: 0;
+    left: 0;
+    height: 650px;
+    position: absolute;
+    z-index: -1;
+  }
 }
 
 /* footer  */
 
 footer {
   background: var(--main-page-color);
-   z-index: auto;
+  z-index: auto;
 }
-
 
 .footerText {
   font-size: 14px;

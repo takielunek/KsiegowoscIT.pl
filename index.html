@@ -34,58 +34,66 @@
     <link rel="stylesheet" href="css/settings.css" />
   </head>
   <body>
-
-
-
-
-
-
-    <nav class="nav navbar">
-      <div class="navContainer wrapper2">
+    <header class="navbar">
+      <div class="wrapper2 header">
         <img
           class="whiteLogo"
           src="assets/svg/whiteLogo.svg"
           alt="Logo KsięgowośćIT.pl"
         />
 
-        <div class="navMobile navCollapse">
-          <a href="#services" class="navItem">Usługi</a>
-          <a href="#collaboration" class="navItem">Współpraca</a>
-          <a href="#aboutUs" class="navItem">Dlaczego my</a>
-          <a href="#contact" class="navItem">Kontakt</a>
-        </div>
-
-        <i class="fa-solid fa-bars hamburger"></i>
-
-        <div class="navbarDesktopItems navCollapse">
-          <div class="desktopItems">
-            <div class="navItems">
+        <nav>
+          <ul class="navDesktop">
+            <li>
               <a href="#services" class="navItem">Usługi</a>
+            </li>
+            <li>
               <a href="#collaboration" class="navItem">Współpraca</a>
+            </li>
+            <li>
               <a href="#aboutUs" class="navItem">Dlaczego my</a>
+            </li>
+            <li>
               <a href="#contact" class="navItem">Kontakt</a>
+            </li>
+            <li>
               <a href="#offer" class="navbarButton">Oferta</a>
-            </div>
-            <div class="navbarIcon">
-              <a href="https://www.facebook.com/ksiegowoscit"
-                ><img src="assets/svg/facebook.svg" alt="Ikona Facebook"
-              /></a>
-              <a href="https://www.linkedin.com/company/ksi%C4%99gowoscit-pl/"
-                ><img
-                  class="icon"
-                  src="assets/svg/linkedIn.svg"
-                  alt="Ikona LinkedIn"
-              /></a>
-            </div>
+            </li>
+          </ul>
+
+          <div class="navbarIcons">
+            <a href="https://www.facebook.com/ksiegowoscit"
+              ><img src="assets/svg/facebook.svg" alt="Ikona Facebook"
+            /></a>
+            <a href="https://www.linkedin.com/company/ksi%C4%99gowoscit-pl/"
+              ><img src="assets/svg/linkedIn.svg" alt="Ikona LinkedIn"
+            /></a>
           </div>
+        </nav>
+
+        <div class="hamburger">
+          <i class="fa-solid fa-bars navButton"></i>
         </div>
       </div>
-    </nav>
+    </header>
 
-
-
-
-
+    
+ <div class="navMobile">
+       <ul>
+        <li>
+          <a href="#services" class="navMobileItem">Usługi</a>
+        </li>
+        <li>
+          <a href="#collaboration" class="navMobileItem ">Współpraca</a>
+        </li>
+        <li>
+          <a href="#aboutUs" class="navMobileItem">Dlaczego my</a>
+        </li>
+        <li>
+          <a href="#contact" class="navMobileItem">Kontakt</a>
+        </li>
+      </ul>
+ </div>
 
 
     <section class="wrapper">
@@ -112,7 +120,7 @@
                   klientów
                 </p>
                 <div class="buttonContainer">
-                  <a href=""
+                  <a href="#aboutUs"
                     ><button class="button carouselButton">
                       Sprawdź nas
                     </button></a
@@ -133,7 +141,7 @@
                 </h1>
                 <p class="carouselText">200 zł netto</p>
                 <div class="buttonContainer">
-                  <a href=""
+                  <a href="#aboutUs"
                     ><button class="button carouselButton">
                       Sprawdź nas
                     </button></a
@@ -147,7 +155,7 @@
     </section>
 
     <main>
-      <section class="wrapper w-80">
+      <section class="wrapper w-90">
         <div class="flex-column-row container2">
           <div class="textCenter">
             <img
@@ -206,7 +214,7 @@
       </section>
 
       <!-- services  -->
-      <section id="services scrollspy" class="wrapper pr">
+      <section id="services" class="wrapper pr">
         <h2 class="m-100">Usługi</h2>
         <img
           class="pa letter1"
@@ -596,7 +604,7 @@
         </div>
       </section>
       <!-- collaboration  -->
-      <section id="collaboration scrollspy" class="wrapper pr">
+      <section id="collaboration" class="wrapper pr">
         <div class="imgPosition">
           <img class="img1" src="assets/img/img1.png" alt="Mężczyzna" />
         </div>
@@ -899,10 +907,7 @@
         </div>
       </section>
       <!-- about us  -->
-      <section
-        id="aboutUs scrollspy"
-        class="flex-column-row mt-170 wrapper w-90"
-      >
+      <section id="aboutUs" class="flex-column-row mt-170 wrapper w-90">
         <img
           class="img2"
           src="assets/img/img2.png"
@@ -988,10 +993,7 @@
       </section>
 
       <!-- contact  -->
-      <section
-        id="contact scrollspy"
-        class="flex-column-row2 mb-70 wrapper w-90 mt-365"
-      >
+      <section id="contact" class="flex-column-row2 mb-70 wrapper w-90 mt-365">
         <img
           class="logoDesktop"
           src="assets/svg/logo.svg"
@@ -1047,10 +1049,7 @@
               ><img src="assets/svg/facebook.svg" alt="Ikona Facebook"
             /></a>
             <a href="https://www.linkedin.com/company/ksi%C4%99gowoscit-pl/"
-              ><img
-                class="icon"
-                src="assets/svg/linkedIn.svg"
-                alt="Ikona LinkedIn"
+              ><img src="assets/svg/linkedIn.svg" alt="Ikona LinkedIn"
             /></a>
           </div>
         </div>
@@ -1063,4 +1062,5 @@
       crossorigin="anonymous"
     ></script>
   </body>
+  <script src="js/main.js"></script>
 </html>
