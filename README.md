@@ -6,6 +6,7 @@ Link do strony:
 ## Użyte technologie
 * HTML
 * CSS
+* JavaScript
 * Bootstrap
 * Font Awesome
 * Google Fonts
