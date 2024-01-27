@@ -1,7 +1,7 @@
 ## Informacje ogólne
 Strona internetowa stworzona na potrzeby firmy KsięgowośćIT.pl. Zgodnie z wytycznymi klienta ograniczono się do technologii.
 
-Link do strony: 
+Link do strony: https://ksiegowosc-it-pl.vercel.app/
 
 ## Użyte technologie
 * HTML
