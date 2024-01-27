@@ -16,3 +16,4 @@ const handleNav = () => {
 
 navBtn.addEventListener("click", handleNav);
 window.addEventListener("scroll", handleScrollSpy);
+

@@ -167,12 +167,12 @@ a:hover {
 
 /* hidden  */
 
-.hidden {
+.hiddenIcon {
   display: block;
 }
 
 @media (min-width: 992px) {
-  .hidden {
+  .hiddenIcon {
     display: none;
   }
 }
@@ -214,6 +214,16 @@ a:hover {
 .button:hover {
   color: var(--red);
   background: var(--white);
+}
+
+button:hover .svg-class path {
+  fill: var(--red);
+  transition: fill 0.5s;
+}
+
+button:hover .svg-class-white path {
+  fill: var(--white);
+  transition: fill 0.5s;
 }
 
 .accordionButtom {
@@ -272,6 +282,16 @@ a:hover {
   padding-top: 100px;
 }
 
+.pt-400 {
+  padding-top: 100px;
+}
+
+@media (min-width: 992px) {
+ .pt-400 {
+  padding-top: 400px;
+}
+}
+
 .py-49 {
   padding: 49px 0px;
 }
@@ -305,4 +325,21 @@ a:hover {
 
 .mb-70 {
   margin-bottom: 70px;
+  padding: 0;
+}
+
+.mb-74 {
+  margin-bottom: 0px;
+}
+
+@media (min-width: 992px) {
+  .mb-74 {
+    margin-bottom: 74px;
+  }
+}
+
+/* other  */
+
+.text-size {
+  font-size: 14px;
 }
