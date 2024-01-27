@@ -133,7 +133,7 @@ nav ul {
 }
 
 .navMobile li {
-  padding: 30px;
+  padding: 20px;
 }
 
 .navMobile-active {
@@ -142,7 +142,7 @@ nav ul {
 
 .navMobileItem {
   color: var(--white);
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 300;
   text-decoration: none;
 }
@@ -384,30 +384,29 @@ ol.carousel-indicators li {
   display: none;
 }
 
-
 svg .kl-svg-1 {
-    stroke-dashoffset: 11133.4296875px;
-    stroke-dasharray: 11133.4296875px;
-    -webkit-transition: stroke-dashoffset 3s cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
-    transition: stroke-dashoffset 3s cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
+  stroke-dashoffset: 11133.4296875px;
+  stroke-dasharray: 11133.4296875px;
+  -webkit-transition: stroke-dashoffset 3s cubic-bezier(0.47, 0, 0.745, 0.715)
+    0s;
+  transition: stroke-dashoffset 3s cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
 }
 
 svg.active .kl-svg-1 {
-    stroke-dashoffset: 0;
+  stroke-dashoffset: 0;
 }
 
 svg .kl-svg-2 {
-    stroke-dashoffset: 11133.4296875px;
-    stroke-dasharray: 11133.4296875px;
-    -webkit-transition: stroke-dashoffset 3s cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
-    transition: stroke-dashoffset 3s cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
+  stroke-dashoffset: 11133.4296875px;
+  stroke-dasharray: 11133.4296875px;
+  -webkit-transition: stroke-dashoffset 3s cubic-bezier(0.47, 0, 0.745, 0.715)
+    0s;
+  transition: stroke-dashoffset 3s cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
 }
 
 svg.active .kl-svg-2 {
-    stroke-dashoffset: 0;
+  stroke-dashoffset: 0;
 }
-
-
 
 @media (min-width: 1200px) {
   .letter1 {
@@ -834,7 +833,7 @@ svg.active .kl-svg-2 {
   .letter2 {
     display: block;
     bottom: 0;
-    left: 0;
+    left: -85px;
     height: 650px;
     position: absolute;
     z-index: -1;
@@ -886,4 +885,12 @@ footer {
     gap: 60px;
     align-items: center;
   }
+}
+
+.gradient {
+  height: 300px;
+  width: 300px;
+  /* right: 0; */
+  top: 0;
+  background: radial-gradient(#e84b3a, #fff);
 }
