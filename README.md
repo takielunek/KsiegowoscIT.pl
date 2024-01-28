@@ -8,6 +8,7 @@ Link do strony: https://ksiegowosc-it-pl.vercel.app/
 * CSS
 * JavaScript
 * Bootstrap
+* Swiper
 * Font Awesome
 * Google Fonts
 * Figma
