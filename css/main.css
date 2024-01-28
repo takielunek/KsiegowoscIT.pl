@@ -606,10 +606,10 @@ svg.active .kl-svg-2 {
     z-index: -1;
   }
 
-   .color-vector2 {
+  .color-vector2 {
     display: block;
     right: 0;
-    bottom: -90px;
+    bottom: -70px;
     z-index: -1;
   }
 }
@@ -746,7 +746,12 @@ svg.active .kl-svg-2 {
   margin-bottom: 47px;
 }
 
-/* reviews carousel */
+/* swiper  */
+
+swiper-container::part(bullet-active) {
+  background-color: var(--red);
+}
+
 .sliderHeight {
   height: 300px;
 }

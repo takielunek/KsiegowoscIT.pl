@@ -31,6 +31,10 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
+
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/settings.css" />
   </head>
@@ -663,7 +667,11 @@
           data-aos="fade-right"
         />
 
-        <img class="pa color-vector1" src="assets/img/vector1.png" alt="Vektor" />
+        <img
+          class="pa color-vector1"
+          src="assets/img/vector1.png"
+          alt="Vektor"
+        />
 
         <div>
           <h2 class="mt-219 mb-74">Współpraca</h2>
@@ -1038,7 +1046,59 @@
           <h2>Opinie naszych klientów</h2>
         </div>
 
-        <div
+        <swiper-container
+          class="mySwiper"
+          pagination="true"
+          pagination-dynamic-bullets="true"
+          pagination-clickable="true"
+          autoplay="true"
+          
+        >
+          <swiper-slide>
+            <div class="item active flex itemStyle">
+              <img class="reviewsImg" src="assets/img/client.png" alt="" />
+              <div class="textMargin">
+                <h6 class="textMedium">
+                  <span class="textRed">Wojtek</span>, tester
+                </h6>
+                <p class="textLight">
+                  Jestem bardzo zadowolony Księgowości IT. Jestem ich klientem
+                  od 3 lat i bardzo polecam. Wszystko można załatwić on-line.
+                </p>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="item active flex itemStyle">
+              <img class="reviewsImg" src="assets/img/client.png" alt="" />
+              <div class="textMargin">
+                <h6 class="textMedium">
+                  <span class="textRed">Wojtek</span>, tester
+                </h6>
+                <p class="textLight">
+                  Jestem bardzo zadowolony Księgowości IT. Jestem ich klientem
+                  od 3 lat i bardzo polecam. Wszystko można załatwić on-line.
+                </p>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="item active flex itemStyle">
+              <img class="reviewsImg" src="assets/img/client.png" alt="" />
+              <div class="textMargin">
+                <h6 class="textMedium">
+                  <span class="textRed">Wojtek</span>, tester
+                </h6>
+                <p class="textLight">
+                  Jestem bardzo zadowolony Księgowości IT. Jestem ich klientem
+                  od 3 lat i bardzo polecam. Wszystko można załatwić on-line.
+                </p>
+              </div>
+            </div>
+          </swiper-slide>
+        </swiper-container>
+
+        <!-- <div
           id="myCarousel"
           class="carousel slide sliderHeight"
           data-ride="carousel"
@@ -1087,22 +1147,21 @@
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
           </ol>
-        </div>
+        </div> -->
       </section>
 
       <!-- contact  -->
-      <section id="contact" class="flex-column-row2 mb-70 wrapper w-90 mt-365 pr">
-
+      <section
+        id="contact"
+        class="flex-column-row2 mb-70 wrapper w-90 mt-365 pr"
+      >
         <img
           class="logoDesktop"
           src="assets/svg/logo.svg"
           alt="Logo KsięgowośćIT.pl"
         />
 
-        <img
-          class="pa color-vector2"
-          src="assets/img/vector2.png"
-        />
+        <img class="pa color-vector2" src="assets/img/vector2.png" />
 
         <div>
           <h2 class="contact">Kontakt</h2>
@@ -1212,6 +1271,7 @@
     <script>
       AOS.init();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   </body>
   <script src="js/main.js"></script>
   <script src="js/animation.js"></script>
