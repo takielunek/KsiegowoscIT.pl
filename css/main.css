@@ -540,6 +540,7 @@ svg.active .kl-svg-2 {
   .collaborationText {
     width: 91.666667%;
     margin: auto;
+    padding-left: 0px;
   }
 }
 
@@ -567,6 +568,7 @@ svg.active .kl-svg-2 {
 
   .collaborationText {
     width: 50%;
+    padding-left: 5%;
   }
 }
 
@@ -586,6 +588,30 @@ svg.active .kl-svg-2 {
   z-index: -1;
   top: 200px;
   width: 1320px;
+}
+
+.color-vector1 {
+  display: none;
+}
+
+.color-vector2 {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .color-vector1 {
+    display: block;
+    left: 0;
+    top: -500px;
+    z-index: -1;
+  }
+
+   .color-vector2 {
+    display: block;
+    right: 0;
+    bottom: -90px;
+    z-index: -1;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -885,12 +911,4 @@ footer {
     gap: 60px;
     align-items: center;
   }
-}
-
-.gradient {
-  height: 300px;
-  width: 300px;
-  /* right: 0; */
-  top: 0;
-  background: radial-gradient(#e84b3a, #fff);
 }
